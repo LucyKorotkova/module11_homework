@@ -1,0 +1,41 @@
+[
+    {
+      "id": 1,
+      "description": "Сложение двух положительных чисел",
+      "input": [5, 3],
+      "expected": 8,
+      "scripts": {
+      "test": "jest"
+     }
+    },
+    {
+      "id": 2,
+      "description": "Сложение отрицательного и положительного числа",
+      "input": [-2, 4],
+      "expected": 2
+    },
+    {
+      "id": 3,
+      "description": "Сложение нулей",
+      "input": [0, 0],
+      "expected": 0
+    },
+    {
+      "id": 4,
+      "description": "Передача строки вместо числа",
+      "input": ["5", 3],
+      "expected": "NaN"
+    },
+    {
+      "id": 5,
+      "description": "Передача null как второго аргумента",
+      "input": [5, null],
+      "expected": "NaN"
+    },
+    {
+      "id": 6,
+      "description": "Передача NaN в качестве первого аргумента",
+      "input": ["NaN", 2],
+      "expected": "NaN"
+    }
+  ]
