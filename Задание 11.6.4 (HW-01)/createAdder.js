@@ -6,8 +6,4 @@ function createAdder(a) {
     };
 }
 
-const add5 = createAdder(5);
-console.log(add5(3)); 
-
-const add10 = createAdder(10);
-console.log(add10(7)); 
+module.exports = createAdder;
