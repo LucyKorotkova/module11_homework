@@ -24,18 +24,30 @@
       "id": 4,
       "description": "Передача строки вместо числа",
       "input": ["5", 3],
-      "expected": "NaN"
+      "expected": "53"
     },
     {
       "id": 5,
       "description": "Передача null как второго аргумента",
       "input": [5, null],
-      "expected": "NaN"
+      "expected": 5
     },
     {
       "id": 6,
       "description": "Передача NaN в качестве первого аргумента",
       "input": ["NaN", 2],
-      "expected": "NaN"
+      "expected": NaN
+    },
+    {
+        "id": 7,
+        "description": "Передача строки как второго аргумента",
+        "input": [5, "3"],
+        "expected": "53"
+    },
+     {
+        "id": 8,
+        "description": "Передача NaN как второго аргумента",
+        "input": [5, "NaN"],
+        "expected": NaN
     }
-  ]
+]
